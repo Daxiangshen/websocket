@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WebSocket Echo Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/a.js"></script>
+</head>
+
+<body >
+<div class="vertical-center">
+    <div class="container">
+        <p> </p>
+        <form role="form" id="chat_form" onsubmit="sendMessage(); return false;">
+            <div class="form-group">
+                <input class="form-control" type="text" name="message" id="message"
+                       placeholder="Type text to echo in here" value="" />
+            </div>
+            <button type="button" id="send" class="btn btn-primary"
+                    onclick="sendMessage();">
+                Send!
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
